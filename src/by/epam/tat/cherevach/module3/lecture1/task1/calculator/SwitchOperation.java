@@ -1,4 +1,4 @@
-package by.epam.tat.cherevach.module3.leacture1;
+package by.epam.tat.cherevach.module3.lecture1.task1.calculator;
 
 public class SwitchOperation {
 

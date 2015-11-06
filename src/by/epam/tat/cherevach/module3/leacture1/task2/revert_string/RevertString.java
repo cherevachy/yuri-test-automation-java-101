@@ -1,4 +1,4 @@
-package by.epam.tat.cherevach.module3.leacture1_part2;
+package by.epam.tat.cherevach.module3.leacture1.task2.revert_string;
 
 import java.lang.*;
 import java.io.*;
