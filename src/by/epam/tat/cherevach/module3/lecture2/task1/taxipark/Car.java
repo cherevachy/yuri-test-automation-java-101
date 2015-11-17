@@ -10,13 +10,13 @@ public class Car {
     private static String carBrandText = "\n| Car Brand: ";
     private static String carPriceText = "| Car Price: ";
     private static String carPetrolConsumptionText = "| Car Petrol Consumption: ";
-    private static String petrolText = " lit./100km";
+    private static String petrolText = " lit./100km |";
 		
-	public Car(String carBrand, int carPrice, String carType, int carPetrolConsumption) {
+	public Car(String carBrand, int carPrice, String carType, int i) {
 	    this.carBrand = carBrand;
 	    this.carPrice = carPrice;
 	    this.carType = carType;
-	    this.carPetrolConsumption = carPetrolConsumption;
+	    this.carPetrolConsumption = i;
 	}
     //Brand
 	public String getCarBrand() {
@@ -28,7 +28,7 @@ public class Car {
 	}
     //
     //Price
-	public int getCarPrice() {
+	public Integer getCarPrice() {
 	    return carPrice;
 	}
 	
@@ -46,7 +46,7 @@ public class Car {
     }
     //
     //Petrol Consumption
-	public int getPetrolConsumption() {
+	public Integer getPetrolConsumption() {
 	    return carPetrolConsumption;
     }
 	
