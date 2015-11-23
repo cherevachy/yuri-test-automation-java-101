@@ -29,11 +29,15 @@ public class TaxiParkRunner {
     	
     	List<Car> carList = TaxiPark.createCarList();
     	//Reader
-    	//List<Car> importedCarList = new ArrayList<Car>();
+    	//List<Car> exportCarList = new ArrayList<Car>();
     	CarReaderInterface reader = new CarReader();
+    	CarReaderInterface readerXml = new CarReader();
+    	CarReaderInterface readerDatabase = new CarReader();
     	
     	//Writer
     	CarWriterInterface writer = new CarWriter();    	
+    	CarWriterInterface writerXml = new CarWriter();
+    	CarWriterInterface writerDatabase = new CarWriter();
     	
     	while (executeScript) {
         System.out.println("\n~~~Yuri Cherevach TaxiPark main menu~~~");
@@ -43,7 +47,11 @@ public class TaxiParkRunner {
         System.out.println("To view a particular car, please enter '4',");
         System.out.println("To add a new car to the TaxiPark, please enter '5',");
         System.out.println("To read a car list from a file, please enter '6', ");
-		System.out.println("To write a car list to a file, please enter '7', ");
+		System.out.println("To write the car list to a file, please enter '7', ");
+		System.out.println("To write the car list to an XML file, please enter '8', ");
+		System.out.println("To read the car list from the XML file, please enter '9', ");
+		System.out.println("To write the car list to the database, please enter '10', ");
+		System.out.println("To read the car list from the database, please enter '11', ");
         System.out.println("For exit, please enter '0'.");
     	
     	int input = userInput.nextInt();
@@ -100,7 +108,18 @@ public class TaxiParkRunner {
 				case 7:
 					writer.writeCarList(carList);
 					break;
-    			
+				case 8:
+    				writerXml.writeCarList(carList);
+					break;
+				case 9:
+					carList = readerXml.readCarList();
+					break;
+				case 10:
+    				writerDatabase.writeCarList(carList);
+					break;
+				case 11:
+					carList = readerDatabase.readCarList();
+					break;
     			default:
     				//System.out.println("Incorrect value! Please, try again!");
     				throw new MainMenuUnsupportedOperationExc("The selected menu option does not exist. Please try again.");
@@ -127,10 +146,7 @@ public class TaxiParkRunner {
     //For import - ClassNotFoundException(?)
 			System.err.println("Exception occured: " + e.getMessage());
 			}
-    		//catch (CarNotFoundExc e) {
-					//System.err.println("Unexpected input!");
-    		//}
-        }
+    		        }
   //}
     
     //catch (InputMismatchException e) {

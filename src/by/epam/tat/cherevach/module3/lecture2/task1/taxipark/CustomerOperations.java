@@ -72,32 +72,40 @@ public class CustomerOperations implements CustomerInterface{
 		carList.add(newCar);
 	}
 	private void validate(Car car) {
+		String exceptionMessage = "Car adding exception: ";
+		try{
 		
 		if (car.getCarBrand() == null) {
-			throw new IllegalArgumentException("Please enter valid car brand!");
+			 exceptionMessage += "Please enter valid car brand!";
+			//throw new IllegalArgumentException("Please enter valid car brand!");
 		}
 		if (car.getCarPrice() <= 0) {
-			throw new IllegalArgumentException("Please enter price > 0!");
+			exceptionMessage += "Please enter price > 0!";
+			//throw new IllegalArgumentException("Please enter price > 0!");
 		}
 		if (car.getCarType() == null) {
-			throw new IllegalArgumentException("Please enter valid car type!");
+			exceptionMessage += "Please enter valid car type!";
+			//throw new IllegalArgumentException("Please enter valid car type!");
 		}
 		if (car.getPetrolConsumption() <= 0) {
-			throw new IllegalArgumentException("Please enter petrol consumption > 0!");
+			exceptionMessage += "Please enter petrol consumption > 0!";
+			//throw new IllegalArgumentException("Please enter petrol consumption > 0!");
 		}
 		if (car.getCarPrice() == null) {
-			throw new PriceIsNullExc("Please enter valid price value!");
+			exceptionMessage += "Please enter valid price value!";
+			//throw new PriceIsNullExc("Please enter valid price value!");
 		}
 		if (car.getPetrolConsumption() == null) {
-			throw new PriceIsNullExc("Please enter valid petrol consumption value!");
+			exceptionMessage += "Please enter valid petrol consumption value!";
+			//throw new PriceIsNullExc("Please enter valid petrol consumption value!");
 		}
-	//}
-		 //catch (IllegalArgumentException e) {
-		//System.err.println(e.getMessage());
-		//} 
-		//catch (NumberFormatException e) {
-		//	System.err.println(e.getMessage());
-		//}
+		if (exceptionMessage != null) {
+			throw new IllegalArgumentException(exceptionMessage);
+		}
+	}
+		catch (IllegalArgumentException e) {
+		System.err.println(e.getMessage());
+		} 
 	}        		        	
         
 }

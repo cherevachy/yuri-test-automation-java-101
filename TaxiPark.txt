@@ -3,4 +3,3 @@ BMW;25;Passenger;9
 Nissan;30;Passenger;7
 Renault;50;Cargo;9
 Ford;75;Cargo;12
-BMW;100;Cargo;100
