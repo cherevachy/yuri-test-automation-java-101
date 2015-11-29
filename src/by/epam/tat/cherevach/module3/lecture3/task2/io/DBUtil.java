@@ -7,7 +7,7 @@ public class DBUtil {
 	public static Connection getConnection() {
 		Connection conn = null;
 		try {
-			Class.forName("org.hsqldb.jdbcDriver");  
+			Class.forName("org.hsqldb.jdbc.JDBCDriver" );  
 			conn = DriverManager.getConnection("jdbc:hsqldb:hsql://localhost/testdb", "sa", "");
 		} catch (SQLException e) {
 			e.printStackTrace();

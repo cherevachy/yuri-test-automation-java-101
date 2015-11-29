@@ -15,6 +15,7 @@ import by.epam.tat.cherevach.module3.lecture2.task1.taxipark.Car;
 public class CarWriterXml implements CarWriterInterface {
 
 	public void writeCarList(List<Car> cars) throws IOException {
+		String filePath = "taxipark.xml"; 
 		try {
 
 			DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
@@ -39,11 +40,11 @@ public class CarWriterXml implements CarWriterInterface {
 				c.appendChild(price);
 				//type
 				Element type = doc.createElement("type");
-				brand.appendChild(doc.createTextNode(car.getCarType()));
+				type.appendChild(doc.createTextNode(car.getCarType()));
 				c.appendChild(type);
 				//petrol consumption
 				Element petrolConsumption = doc.createElement("petrolConsumption");
-				price.appendChild(doc.createTextNode(String.valueOf(car.getPetrolConsumption())));
+				petrolConsumption.appendChild(doc.createTextNode(String.valueOf(car.getPetrolConsumption())));
 				c.appendChild(petrolConsumption);
 			}	
 
@@ -52,7 +53,7 @@ public class CarWriterXml implements CarWriterInterface {
 			Transformer transformer = transformerFactory.newTransformer();
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			DOMSource source = new DOMSource(doc);
-			StreamResult result = new StreamResult(new File("D:\\EclipseWorkspace\\TAMYuri_Cherevach\taxiparkXML.xml"));
+			StreamResult result = new StreamResult(new File(filePath));
 			transformer.transform(source, result);
 			System.out.println("Saved to xml.");
 

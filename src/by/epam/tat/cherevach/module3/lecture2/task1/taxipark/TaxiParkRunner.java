@@ -31,13 +31,13 @@ public class TaxiParkRunner {
     	//Reader
     	//List<Car> exportCarList = new ArrayList<Car>();
     	CarReaderInterface reader = new CarReader();
-    	CarReaderInterface readerXml = new CarReader();
-    	CarReaderInterface readerDatabase = new CarReader();
+    	CarReaderInterface readerXml = new CarReaderXml();
+    	CarReaderInterface readerDatabase = new CarReaderFromDB();
     	
     	//Writer
     	CarWriterInterface writer = new CarWriter();    	
-    	CarWriterInterface writerXml = new CarWriter();
-    	CarWriterInterface writerDatabase = new CarWriter();
+    	CarWriterInterface writerXml = new CarWriterXml();
+    	CarWriterInterface writerDatabase = new CarWriterToDB();
     	
     	while (executeScript) {
         System.out.println("\n~~~Yuri Cherevach TaxiPark main menu~~~");
@@ -84,24 +84,32 @@ public class TaxiParkRunner {
     				//selectParticularCar.selectParticularCar(carNameScanner.readUserInput(), carList);  				    				
     				break;
     			case 5:
+    				String exceptionMessage = "Some ints are null! ";
+    				try{
+    				
 					System.out.println("Please Enter car Brand: ");
 					String carBrand = carNameScanner.readUserInput();
 					System.out.println("Please Enter car Price: ");
 					String carPrice = carNameScanner.readUserInput();
+					if (carPrice == null) {
+						exceptionMessage += "Please enter some price!";
+						throw new IllegalArgumentException("Please enter some price!");
+					}
 					System.out.println("Please Enter car Type ('Passenger' or 'Cargo'): ");
 					String carType = carNameScanner.readUserInput();
 					System.out.println("Please Enter car Petrol Consumption: ");
 					String carPetrolConsumption = carNameScanner.readUserInput();
-					//try {
+					if (carPetrolConsumption == null) {
+						exceptionMessage += "Please enter some petrol consumption!";
+						throw new IllegalArgumentException("Please enter some petrol consumption!");
+					}
 					Car newCar = new Car(carBrand, Integer.parseInt(carPrice), carType, Integer.parseInt(carPetrolConsumption));			
 					addCarToTaxiPark.addCarToTaxiPark(newCar, carList);
-					//} catch (IllegalArgumentException e) {
-						//System.err.println(exceptionOper + e.getMessage());
-					//} 
-					//catch (NumberFormatException e) {
-						//System.err.println(e.getMessage());
-					//}
-					break;
+					} catch (IllegalArgumentException e) {
+						System.err.println(exceptionMessage);
+					} 
+					
+    				break;
     			case 6:
     				carList = reader.readCarList();
 					break;

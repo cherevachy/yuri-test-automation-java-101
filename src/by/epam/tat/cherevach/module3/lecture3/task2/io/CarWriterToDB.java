@@ -1,10 +1,8 @@
 package by.epam.tat.cherevach.module3.lecture3.task2.io;
 
-import java.io.IOException;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.List;
+import java.io.*;
+import java.sql.*;
+import java.util.*;
 
 import by.epam.tat.cherevach.module3.lecture2.task1.taxipark.Car;
 
@@ -16,13 +14,19 @@ public class CarWriterToDB implements CarWriterInterface {
 		try {
 			Statement stmt = dbConnection.createStatement();
 
-			stmt.execute("CREATE TABLE IF NOT EXISTS CARS (brand varchar(120), price double, type varchar(120), petrol double)");
+			stmt.execute("CREATE TABLE IF NOT EXISTS CARS (brand varchar(120), price integer, type varchar(120), petrol integer)");
+			//stmt.execute("SHUTDOWN");
 			for (Car car : cars) {
-				stmt.executeUpdate("INSERT INTO CARS(NAME,PRICE,TYPE,PETROL) VALUES('"
+				//stmt.executeUpdate("INSERT INTO CARS(BRAND,PRICE,TYPE,PETROL) VALUES('"
+						//+ car.getCarBrand() + "',"
+						//+ car.getCarPrice() + "',"
+						//+ car.getCarType() + "',"
+						//+ car.getPetrolConsumption() + ")");
+				stmt.executeUpdate("INSERT INTO CARS(BRAND,PRICE) VALUES('"
 						+ car.getCarBrand() + "',"
-						+ car.getCarPrice() + "',"
-						+ car.getCarType() + "',"
-						+ car.getPetrolConsumption() + ")");
+						+ car.getCarPrice() + ")");
+						//+ car.getCarType() + ")");
+						//+ car.getPetrolConsumption() + ")");		
 			}
 			stmt.close();
 			System.out.println("Writing to DB status: COMPLETED");

@@ -11,7 +11,7 @@ public class CarReaderXml implements CarReaderInterface {
 		public List<Car> readCarList() throws IOException {
 			List<Car> cars = new ArrayList<Car>();
 			try {
-				File xmlFile = new File("taxiparkXML.xml");
+				File xmlFile = new File("taxipark.xml");
 				DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 				DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 				Document doc = dBuilder.parse(xmlFile);
