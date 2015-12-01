@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Yuri's Test Suite">
+    <test name="TotalCost1">
+        <classes>
+            <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TestTaxiParkTotalCost"/>
+        </classes>
+     </test> 
+    
+    
+    <test name="TotalCost2">   
+    <parameter name="testCarBrand" value= "TestBrand"/>   
+    <parameter name="testCarPrice" value= "100"/>   
+    <parameter name="testCarType" value= "Passenger"/>  
+    <parameter name="testCarPetrolConsumption" value= "200"/>          
+        <classes>
+            <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TestTaxiParkTotalCostParameters"/>
+        </classes>
+    </test>
+    
+    
+    <test name="ViewCar">   
+    <parameter name="testCarBrand" value= "Test"/>     
+    <parameter name="testCarBrand2" value= "UnknownCar"/>     
+        <classes>
+            <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TestSelectACar"/>
+        </classes>
+    </test>
+    
+</suite>
+ 
+ 
+ 
