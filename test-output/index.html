@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Yuri&#039;s_Test_Suite">
-              <span class="suite-name border-passed">Yuri's Test Suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Calculator_tests">
+              <span class="suite-name border-failed">Calculator_tests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Yuri&#039;s_Test_Suite">
-                    <span>D:\EclipseWorkspace\TAMYuri_Cherevach\testng.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Calculator_tests">
+                    <span>D:\EclipseWorkspace\TAMYuri_Cherevach\calc_test.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Yuri&#039;s_Test_Suite">
-                    <span class="test-stats">3 tests</span>
+                  <a href="#" class="navigator-link " panel-name="testlist-Calculator_tests">
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Yuri&#039;s_Test_Suite">
-                    <span>0 groups</span>
+                  <a href="#" class="navigator-link " panel-name="group-Calculator_tests">
+                    <span>4 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Yuri&#039;s_Test_Suite">
+                  <a href="#" class="navigator-link " panel-name="times-Calculator_tests">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Yuri&#039;s_Test_Suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Calculator_tests">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Yuri&#039;s_Test_Suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Calculator_tests">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Yuri&#039;s_Test_Suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Calculator_tests">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,51 +91,155 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">26 methods, 4 failed,   22 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Calculator_tests" class="hide-methods failed suite-Calculator_tests"> (hide)</a> <!-- hide-methods failed suite-Calculator_tests -->
+                      <a href="#" panel-name="suite-Calculator_tests" class="show-methods failed suite-Calculator_tests"> (show)</a> <!-- show-methods failed suite-Calculator_tests -->
+                    </span>
+                    <div class="method-list-content failed suite-Calculator_tests">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest" hash-for-method="testDivLong(-5, -2, -2.5)">testDivLong(-5, -2, -2.5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest" hash-for-method="testMultBasic(1.5, 2.2, 3.3)">testMultBasic(1.5, 2.2, 3.3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest" hash-for-method="testSubBasic(5.1, 1.5, 3.6)">testSubBasic(5.1, 1.5, 3.6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest" hash-for-method="testSubLong(90000000, 9999999, 81111111)">testSubLong(90000000, 9999999, 81111111)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Calculator_tests -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Yuri&#039;s_Test_Suite" class="hide-methods passed suite-Yuri&#039;s_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Yuri's_Test_Suite -->
-                      <a href="#" panel-name="suite-Yuri&#039;s_Test_Suite" class="show-methods passed suite-Yuri&#039;s_Test_Suite"> (show)</a> <!-- show-methods passed suite-Yuri's_Test_Suite -->
+                      <a href="#" panel-name="suite-Calculator_tests" class="hide-methods passed suite-Calculator_tests"> (hide)</a> <!-- hide-methods passed suite-Calculator_tests -->
+                      <a href="#" panel-name="suite-Calculator_tests" class="show-methods passed suite-Calculator_tests"> (show)</a> <!-- show-methods passed suite-Calculator_tests -->
                     </span>
-                    <div class="method-list-content passed suite-Yuri&#039;s_Test_Suite">
+                    <div class="method-list-content passed suite-Calculator_tests">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Yuri&#039;s_Test_Suite" title="by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest" hash-for-method="testOveralTaxiParkCost1">testOveralTaxiParkCost1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest" hash-for-method="divByZero">divByZero</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Yuri&#039;s_Test_Suite" title="by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest" hash-for-method="testOveralTaxiParkCost2">testOveralTaxiParkCost2</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest" hash-for-method="testDivBasic(2.2, 1.1, 2.0)">testDivBasic(2.2, 1.1, 2.0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Yuri&#039;s_Test_Suite" title="by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostParametersTest" hash-for-method="testParametr1(TestBrand, 100, Passenger, 200)">testParametr1(TestBrand, 100, Passenger, 200)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest" hash-for-method="testDivLong(-100, 100, -1)">testDivLong(-100, 100, -1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Yuri&#039;s_Test_Suite" title="by.epam.tat.cherevach.module4.task1.unit_testing.SelectACarTest" hash-for-method="testSelectACar(Test)">testSelectACar(Test)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest" hash-for-method="testDivLong(0, 12345, 0)">testDivLong(0, 12345, 0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Yuri&#039;s_Test_Suite" title="by.epam.tat.cherevach.module4.task1.unit_testing.SelectACarTest" hash-for-method="testSelectACar2(UnknownCar)">testSelectACar2(UnknownCar)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest" hash-for-method="testDivLong(90, 9, 10)">testDivLong(90, 9, 10)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Yuri&#039;s_Test_Suite" title="by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest" hash-for-method="testWithAddedCar1">testWithAddedCar1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest" hash-for-method="testDivLong(11, 11, 1)">testDivLong(11, 11, 1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Yuri&#039;s_Test_Suite" title="by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest" hash-for-method="testWithAddedCar2">testWithAddedCar2</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest" hash-for-method="testMultLong(-5, 0, 0)">testMultLong(-5, 0, 0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Yuri's_Test_Suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest" hash-for-method="testMultLong(11, 11, 121)">testMultLong(11, 11, 121)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest" hash-for-method="testMultLong(90, 99, 8910)">testMultLong(90, 99, 8910)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest" hash-for-method="testMultLong(-100, 100, -10000)">testMultLong(-100, 100, -10000)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest" hash-for-method="testMultLong(-5, -2, 10)">testMultLong(-5, -2, 10)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest" hash-for-method="testMultLong(0, 0, 0)">testMultLong(0, 0, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest" hash-for-method="testSubLong(0, 0, 0)">testSubLong(0, 0, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest" hash-for-method="testSubLong(-5, -2, -3)">testSubLong(-5, -2, -3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest" hash-for-method="testSubLong(11, 11, 0)">testSubLong(11, 11, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest" hash-for-method="testSubLong(-100, 100, -200)">testSubLong(-100, 100, -200)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest" hash-for-method="testSumBasic(5.1, 1.5, 6.6)">testSumBasic(5.1, 1.5, 6.6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest" hash-for-method="testSumLong(90000000, 9999999, 99999999)">testSumLong(90000000, 9999999, 99999999)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest" hash-for-method="testSumLong(-5, -2, -7)">testSumLong(-5, -2, -7)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest" hash-for-method="testSumLong(11, 11, 22)">testSumLong(11, 11, 22)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest" hash-for-method="testSumLong(-100, 100, 0)">testSumLong(-100, 100, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Calculator_tests" title="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest" hash-for-method="testSumLong(0, 0, 0)">testSumLong(0, 0, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Calculator_tests -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -146,255 +250,750 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Yuri&#039;s_Test_Suite" class="panel Yuri&#039;s_Test_Suite">
-          <div class="suite-Yuri&#039;s_Test_Suite-class-passed">
+        <div panel-name="suite-Calculator_tests" class="panel Calculator_tests">
+          <div class="suite-Calculator_tests-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostParametersTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testParametr1(TestBrand, 100, Passenger, 200)">
-                  </a> <!-- testParametr1(TestBrand, 100, Passenger, 200) -->
-                  <span class="method-name">testParametr1</span>
-                  <span class="parameters">(TestBrand, 100, Passenger, 200)</span>
+                  <a name="testSubBasic(5.1, 1.5, 3.6)">
+                  </a> <!-- testSubBasic(5.1, 1.5, 3.6) -->
+                  <span class="method-name">testSubBasic</span>
+                  <span class="parameters">(5.1, 1.5, 3.6)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Invalid sub1! expected [3.6] but found [3.5999999999999996]
+	at by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest.testSubBasic(SubOperationTest.java:30)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubLong(90000000, 9999999, 81111111)">
+                  </a> <!-- testSubLong(90000000, 9999999, 81111111) -->
+                  <span class="method-name">testSubLong</span>
+                  <span class="parameters">(90000000, 9999999, 81111111)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Invalid sub2! expected [81111111] but found [80000001]
+	at by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest.testSubLong(SubOperationTest.java:36)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Yuri's_Test_Suite-class-passed -->
-          <div class="suite-Yuri&#039;s_Test_Suite-class-passed">
+          </div> <!-- suite-Calculator_tests-class-failed -->
+          <div class="suite-Calculator_tests-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">by.epam.tat.cherevach.module4.task1.unit_testing.SelectACarTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testSelectACar(Test)">
-                  </a> <!-- testSelectACar(Test) -->
-                  <span class="method-name">testSelectACar</span>
-                  <span class="parameters">(Test)</span>
-                  <em>
-(This is a test for car entry selection)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSelectACar2(UnknownCar)">
-                  </a> <!-- testSelectACar2(UnknownCar) -->
-                  <span class="method-name">testSelectACar2</span>
-                  <span class="parameters">(UnknownCar)</span>
-                  <em>
-(This one should fail)                  </em>
+                  <a name="testMultBasic(1.5, 2.2, 3.3)">
+                  </a> <!-- testMultBasic(1.5, 2.2, 3.3) -->
+                  <span class="method-name">testMultBasic</span>
+                  <span class="parameters">(1.5, 2.2, 3.3)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Invalid mult1! expected [3.3] but found [3.0]
+	at by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest.testMultBasic(MultOperationTest.java:30)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Yuri's_Test_Suite-class-passed -->
-          <div class="suite-Yuri&#039;s_Test_Suite-class-passed">
+          </div> <!-- suite-Calculator_tests-class-failed -->
+          <div class="suite-Calculator_tests-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testOveralTaxiParkCost1">
-                  </a> <!-- testOveralTaxiParkCost1 -->
-                  <span class="method-name">testOveralTaxiParkCost1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testOveralTaxiParkCost2">
-                  </a> <!-- testOveralTaxiParkCost2 -->
-                  <span class="method-name">testOveralTaxiParkCost2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWithAddedCar1">
-                  </a> <!-- testWithAddedCar1 -->
-                  <span class="method-name">testWithAddedCar1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWithAddedCar2">
-                  </a> <!-- testWithAddedCar2 -->
-                  <span class="method-name">testWithAddedCar2</span>
+                  <a name="testDivLong(-5, -2, -2.5)">
+                  </a> <!-- testDivLong(-5, -2, -2.5) -->
+                  <span class="method-name">testDivLong</span>
+                  <span class="parameters">(-5, -2, -2.5)</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: argument type mismatch
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Yuri's_Test_Suite-class-passed -->
-        </div> <!-- panel Yuri's_Test_Suite -->
-        <div panel-name="test-xml-Yuri&#039;s_Test_Suite" class="panel">
+          </div> <!-- suite-Calculator_tests-class-failed -->
+          <div class="suite-Calculator_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubLong(0, 0, 0)">
+                  </a> <!-- testSubLong(0, 0, 0) -->
+                  <span class="method-name">testSubLong</span>
+                  <span class="parameters">(0, 0, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubLong(-5, -2, -3)">
+                  </a> <!-- testSubLong(-5, -2, -3) -->
+                  <span class="method-name">testSubLong</span>
+                  <span class="parameters">(-5, -2, -3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubLong(11, 11, 0)">
+                  </a> <!-- testSubLong(11, 11, 0) -->
+                  <span class="method-name">testSubLong</span>
+                  <span class="parameters">(11, 11, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubLong(-100, 100, -200)">
+                  </a> <!-- testSubLong(-100, 100, -200) -->
+                  <span class="method-name">testSubLong</span>
+                  <span class="parameters">(-100, 100, -200)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Calculator_tests-class-passed -->
+          <div class="suite-Calculator_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMultLong(-5, 0, 0)">
+                  </a> <!-- testMultLong(-5, 0, 0) -->
+                  <span class="method-name">testMultLong</span>
+                  <span class="parameters">(-5, 0, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMultLong(11, 11, 121)">
+                  </a> <!-- testMultLong(11, 11, 121) -->
+                  <span class="method-name">testMultLong</span>
+                  <span class="parameters">(11, 11, 121)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMultLong(90, 99, 8910)">
+                  </a> <!-- testMultLong(90, 99, 8910) -->
+                  <span class="method-name">testMultLong</span>
+                  <span class="parameters">(90, 99, 8910)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMultLong(-100, 100, -10000)">
+                  </a> <!-- testMultLong(-100, 100, -10000) -->
+                  <span class="method-name">testMultLong</span>
+                  <span class="parameters">(-100, 100, -10000)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMultLong(-5, -2, 10)">
+                  </a> <!-- testMultLong(-5, -2, 10) -->
+                  <span class="method-name">testMultLong</span>
+                  <span class="parameters">(-5, -2, 10)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMultLong(0, 0, 0)">
+                  </a> <!-- testMultLong(0, 0, 0) -->
+                  <span class="method-name">testMultLong</span>
+                  <span class="parameters">(0, 0, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Calculator_tests-class-passed -->
+          <div class="suite-Calculator_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="divByZero">
+                  </a> <!-- divByZero -->
+                  <span class="method-name">divByZero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDivBasic(2.2, 1.1, 2.0)">
+                  </a> <!-- testDivBasic(2.2, 1.1, 2.0) -->
+                  <span class="method-name">testDivBasic</span>
+                  <span class="parameters">(2.2, 1.1, 2.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDivLong(-100, 100, -1)">
+                  </a> <!-- testDivLong(-100, 100, -1) -->
+                  <span class="method-name">testDivLong</span>
+                  <span class="parameters">(-100, 100, -1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDivLong(0, 12345, 0)">
+                  </a> <!-- testDivLong(0, 12345, 0) -->
+                  <span class="method-name">testDivLong</span>
+                  <span class="parameters">(0, 12345, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDivLong(90, 9, 10)">
+                  </a> <!-- testDivLong(90, 9, 10) -->
+                  <span class="method-name">testDivLong</span>
+                  <span class="parameters">(90, 9, 10)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDivLong(11, 11, 1)">
+                  </a> <!-- testDivLong(11, 11, 1) -->
+                  <span class="method-name">testDivLong</span>
+                  <span class="parameters">(11, 11, 1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Calculator_tests-class-passed -->
+          <div class="suite-Calculator_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSumBasic(5.1, 1.5, 6.6)">
+                  </a> <!-- testSumBasic(5.1, 1.5, 6.6) -->
+                  <span class="method-name">testSumBasic</span>
+                  <span class="parameters">(5.1, 1.5, 6.6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSumLong(90000000, 9999999, 99999999)">
+                  </a> <!-- testSumLong(90000000, 9999999, 99999999) -->
+                  <span class="method-name">testSumLong</span>
+                  <span class="parameters">(90000000, 9999999, 99999999)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSumLong(-5, -2, -7)">
+                  </a> <!-- testSumLong(-5, -2, -7) -->
+                  <span class="method-name">testSumLong</span>
+                  <span class="parameters">(-5, -2, -7)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSumLong(11, 11, 22)">
+                  </a> <!-- testSumLong(11, 11, 22) -->
+                  <span class="method-name">testSumLong</span>
+                  <span class="parameters">(11, 11, 22)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSumLong(-100, 100, 0)">
+                  </a> <!-- testSumLong(-100, 100, 0) -->
+                  <span class="method-name">testSumLong</span>
+                  <span class="parameters">(-100, 100, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSumLong(0, 0, 0)">
+                  </a> <!-- testSumLong(0, 0, 0) -->
+                  <span class="method-name">testSumLong</span>
+                  <span class="parameters">(0, 0, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Calculator_tests-class-passed -->
+        </div> <!-- panel Calculator_tests -->
+        <div panel-name="test-xml-Calculator_tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\EclipseWorkspace\TAMYuri_Cherevach\testng.xml</span>
+            <span class="header-content">D:\EclipseWorkspace\TAMYuri_Cherevach\calc_test.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Yuri&amp;#039;s Test Suite&quot;&gt;
-  &lt;test name=&quot;TotalCost1&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Calculator_tests&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;Sum&quot;&gt;
+    &lt;parameter name=&quot;addend1&quot; value=&quot;5.1&quot;/&gt;
+    &lt;parameter name=&quot;addend2&quot; value=&quot;1.5&quot;/&gt;
+    &lt;parameter name=&quot;sum&quot; value=&quot;6.6&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest&quot;/&gt;
+      &lt;class name=&quot;by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TotalCost1 --&gt;
-  &lt;test name=&quot;TotalCost2&quot;&gt;
-    &lt;parameter name=&quot;testCarBrand&quot; value=&quot;TestBrand&quot;/&gt;
-    &lt;parameter name=&quot;testCarPetrolConsumption&quot; value=&quot;200&quot;/&gt;
-    &lt;parameter name=&quot;testCarType&quot; value=&quot;Passenger&quot;/&gt;
-    &lt;parameter name=&quot;testCarPrice&quot; value=&quot;100&quot;/&gt;
+  &lt;/test&gt; &lt;!-- Sum --&gt;
+  &lt;test name=&quot;Sub&quot;&gt;
+    &lt;parameter name=&quot;subResult&quot; value=&quot;3.6&quot;/&gt;
+    &lt;parameter name=&quot;sub2&quot; value=&quot;1.5&quot;/&gt;
+    &lt;parameter name=&quot;sub1&quot; value=&quot;5.1&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostParametersTest&quot;/&gt;
+      &lt;class name=&quot;by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TotalCost2 --&gt;
-  &lt;test name=&quot;ViewCar&quot;&gt;
-    &lt;parameter name=&quot;testCarBrand&quot; value=&quot;Test&quot;/&gt;
-    &lt;parameter name=&quot;testCarBrand2&quot; value=&quot;UnknownCar&quot;/&gt;
+  &lt;/test&gt; &lt;!-- Sub --&gt;
+  &lt;test name=&quot;Mult&quot;&gt;
+    &lt;parameter name=&quot;mult2&quot; value=&quot;2.2&quot;/&gt;
+    &lt;parameter name=&quot;mult1&quot; value=&quot;1.5&quot;/&gt;
+    &lt;parameter name=&quot;multResult&quot; value=&quot;3.3&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;by.epam.tat.cherevach.module4.task1.unit_testing.SelectACarTest&quot;/&gt;
+      &lt;class name=&quot;by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- ViewCar --&gt;
-&lt;/suite&gt; &lt;!-- Yuri&apos;s Test Suite --&gt;
+  &lt;/test&gt; &lt;!-- Mult --&gt;
+  &lt;test name=&quot;Div&quot;&gt;
+    &lt;parameter name=&quot;divResult&quot; value=&quot;2&quot;/&gt;
+    &lt;parameter name=&quot;div2&quot; value=&quot;1.1&quot;/&gt;
+    &lt;parameter name=&quot;div1&quot; value=&quot;2.2&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Div --&gt;
+&lt;/suite&gt; &lt;!-- Calculator_tests --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Yuri&#039;s_Test_Suite" class="panel">
+        <div panel-name="testlist-Calculator_tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Yuri's Test Suite</span>
+            <span class="header-content">Tests for Calculator_tests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TotalCost1 (1 class)</span>
+                <span class="test-name">Sum (1 class)</span>
               </li>
               <li>
-                <span class="test-name">TotalCost2 (1 class)</span>
+                <span class="test-name">Sub (1 class)</span>
               </li>
               <li>
-                <span class="test-name">ViewCar (1 class)</span>
+                <span class="test-name">Mult (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Div (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Yuri&#039;s_Test_Suite" class="panel">
+        <div panel-name="group-Calculator_tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Yuri's Test Suite</span>
+            <span class="header-content">Groups for Calculator_tests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">divTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDivBasic</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDivLong</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">multTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testMultBasic</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testMultLong</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">subTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSubBasic</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSubLong</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sumTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSumBasic</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSumLong</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Yuri&#039;s_Test_Suite" class="panel">
+        <div panel-name="times-Calculator_tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Yuri's Test Suite</span>
+            <span class="header-content">Times for Calculator_tests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Yuri's_Test_Suite');
-function tableData_Yuri's_Test_Suite() {
+suiteTableInitFunctions.push('tableData_Calculator_tests');
+function tableData_Calculator_tests() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(26);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testOveralTaxiParkCost1')
-data.setCell(0, 2, 'by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest')
-data.setCell(0, 3, 17);
+data.setCell(0, 1, 'testSubLong')
+data.setCell(0, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest')
+data.setCell(0, 3, 34);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testWithAddedCar2')
-data.setCell(1, 2, 'by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest')
-data.setCell(1, 3, 1);
+data.setCell(1, 1, 'divByZero')
+data.setCell(1, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest')
+data.setCell(1, 3, 18);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testOveralTaxiParkCost2')
-data.setCell(2, 2, 'by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest')
-data.setCell(2, 3, 1);
+data.setCell(2, 1, 'testSubBasic')
+data.setCell(2, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest')
+data.setCell(2, 3, 16);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testWithAddedCar1')
-data.setCell(3, 2, 'by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'testSumBasic')
+data.setCell(3, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest')
+data.setCell(3, 3, 14);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testParametr1')
-data.setCell(4, 2, 'by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostParametersTest')
-data.setCell(4, 3, 0);
+data.setCell(4, 1, 'testSumLong')
+data.setCell(4, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest')
+data.setCell(4, 3, 14);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testSelectACar2')
-data.setCell(5, 2, 'by.epam.tat.cherevach.module4.task1.unit_testing.SelectACarTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 1, 'testMultLong')
+data.setCell(5, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest')
+data.setCell(5, 3, 6);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testSelectACar')
-data.setCell(6, 2, 'by.epam.tat.cherevach.module4.task1.unit_testing.SelectACarTest')
-data.setCell(6, 3, 0);
-window.suiteTableData['Yuri's_Test_Suite']= { tableData: data, tableDiv: 'times-div-Yuri's_Test_Suite'}
+data.setCell(6, 1, 'testMultLong')
+data.setCell(6, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest')
+data.setCell(6, 3, 5);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testDivBasic')
+data.setCell(7, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest')
+data.setCell(7, 3, 5);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testMultBasic')
+data.setCell(8, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest')
+data.setCell(8, 3, 3);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testSumLong')
+data.setCell(9, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest')
+data.setCell(9, 3, 2);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testDivLong')
+data.setCell(10, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest')
+data.setCell(10, 3, 2);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testSubLong')
+data.setCell(11, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testSubLong')
+data.setCell(12, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testSubLong')
+data.setCell(13, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testSumLong')
+data.setCell(14, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testSumLong')
+data.setCell(15, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testSumLong')
+data.setCell(16, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testMultLong')
+data.setCell(17, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testMultLong')
+data.setCell(18, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testSubLong')
+data.setCell(19, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testMultLong')
+data.setCell(20, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testMultLong')
+data.setCell(21, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testDivLong')
+data.setCell(22, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testDivLong')
+data.setCell(23, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testDivLong')
+data.setCell(24, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testDivLong')
+data.setCell(25, 2, 'by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest')
+data.setCell(25, 3, 0);
+window.suiteTableData['Calculator_tests']= { tableData: data, tableDiv: 'times-div-Calculator_tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 ms</span>
-              <div id="times-div-Yuri&#039;s_Test_Suite">
-              </div> <!-- times-div-Yuri's_Test_Suite -->
+              <span class="suite-total-time">Total running time: 127 ms</span>
+              <div id="times-div-Calculator_tests">
+              </div> <!-- times-div-Calculator_tests -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Yuri&#039;s_Test_Suite" class="panel">
+        <div panel-name="reporter-Calculator_tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Yuri's Test Suite</span>
+            <span class="header-content">Reporter output for Calculator_tests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Yuri&#039;s_Test_Suite" class="panel">
+        <div panel-name="ignored-methods-Calculator_tests" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Yuri&#039;s_Test_Suite" class="panel">
+        <div panel-name="chronological-Calculator_tests" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testOveralTaxiParkCost1</span>
+              <div class="chronological-class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testOveralTaxiParkCost2</span>
-                <span class="method-start">19 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testWithAddedCar1</span>
-                <span class="method-start">21 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testWithAddedCar2</span>
-                <span class="method-start">22 ms</span>
+                <span class="method-name">testSumBasic(5.1, 1.5, 6.6)</span>
+                <span class="method-start">33 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostParametersTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testParametr1(TestBrand, 100, Passenger, 200)</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSubBasic(5.1, 1.5, 3.6)</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSumLong(11, 11, 22)</span>
+                <span class="method-start">52 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSubLong(11, 11, 0)</span>
+                <span class="method-start">54 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSubLong(90000000, 9999999, 81111111)</span>
+                <span class="method-start">57 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSubLong(-5, -2, -3)</span>
+                <span class="method-start">65 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSumLong(90000000, 9999999, 99999999)</span>
+                <span class="method-start">67 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSumLong(-5, -2, -7)</span>
                 <span class="method-start">71 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSumLong(-100, 100, 0)</span>
+                <span class="method-start">75 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSumLong(0, 0, 0)</span>
+                <span class="method-start">86 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">88 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">by.epam.tat.cherevach.module4.task1.unit_testing.SelectACarTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testSelectACar(Test)</span>
-                <span class="method-start">82 ms</span>
+                <span class="method-name">testSubLong(-100, 100, -200)</span>
+                <span class="method-start">100 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testSelectACar2(UnknownCar)</span>
-                <span class="method-start">83 ms</span>
+                <span class="method-name">testSubLong(0, 0, 0)</span>
+                <span class="method-start">104 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">106 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">167 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testMultBasic(1.5, 2.2, 3.3)</span>
+                <span class="method-start">168 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">171 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">divByZero</span>
+                <span class="method-start">172 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testMultLong(11, 11, 121)</span>
+                <span class="method-start">174 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMultLong(90, 99, 8910)</span>
+                <span class="method-start">180 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMultLong(-5, -2, 10)</span>
+                <span class="method-start">180 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMultLong(-5, 0, 0)</span>
+                <span class="method-start">181 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMultLong(-100, 100, -10000)</span>
+                <span class="method-start">188 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMultLong(0, 0, 0)</span>
+                <span class="method-start">190 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">190 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testDivBasic(2.2, 1.1, 2.0)</span>
+                <span class="method-start">193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDivLong(11, 11, 1)</span>
+                <span class="method-start">200 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDivLong(90, 9, 10)</span>
+                <span class="method-start">203 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDivLong(-5, -2, -2.5)</span>
+                <span class="method-start">207 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDivLong(0, 12345, 0)</span>
+                <span class="method-start">208 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDivLong(-100, 100, -1)</span>
+                <span class="method-start">209 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">209 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

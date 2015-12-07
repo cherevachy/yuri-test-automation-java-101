@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Calculator_tests" verbose="1" parallel="tests" thread-count="2">
+    <test name="Sum">
+    <parameter name="addend1" value= "5.1"/>   
+    <parameter name="addend2" value= "1.5"/>   
+    <parameter name="sum" value= "6.6"/>  
+        <classes>
+            <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest"/>
+        </classes>
+     </test> 
+    
+    <test name="Sub">
+    <parameter name="sub1" value= "5.1"/>   
+    <parameter name="sub2" value= "1.5"/>   
+    <parameter name="subResult" value= "3.6"/>  
+        <classes>
+            <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest"/>
+        </classes>
+     </test>
+    
+    <test name="Mult">
+    <parameter name="mult1" value= "1.5"/>   
+    <parameter name="mult2" value= "2.2"/>   
+    <parameter name="multResult" value= "3.3"/>  
+        <classes>
+            <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest"/>
+        </classes>
+     </test>
+    
+    <test name="Div">
+    <parameter name="div1" value= "2.2"/>   
+    <parameter name="div2" value= "1.1"/>   
+    <parameter name="divResult" value= "2"/>  
+        <classes>
+            <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest"/>
+        </classes>
+     </test>
+    
+</suite>
+ 
+ 
+ 

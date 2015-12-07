@@ -1,37 +1,188 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="7" passed="7">
+<testng-results skipped="0" failed="4" total="26" passed="22">
   <reporter-output>
   </reporter-output>
-  <suite name="Yuri&#039;s Test Suite" duration-ms="106" started-at="2015-12-06T12:57:37Z" finished-at="2015-12-06T12:57:37Z">
+  <suite name="Calculator_tests" duration-ms="223" started-at="2015-12-07T09:14:54Z" finished-at="2015-12-07T09:14:54Z">
     <groups>
+      <group name="divTest">
+        <method signature="DivOperationTest.testDivBasic(double, double, double)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest@649d209a]" name="testDivBasic" class="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest"/>
+        <method signature="DivOperationTest.testDivLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest@649d209a]" name="testDivLong" class="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest"/>
+      </group> <!-- divTest -->
+      <group name="subTest">
+        <method signature="SubOperationTest.testSubBasic(double, double, double)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest@6fffcba5]" name="testSubBasic" class="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest"/>
+        <method signature="SubOperationTest.testSubLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest@6fffcba5]" name="testSubLong" class="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest"/>
+      </group> <!-- subTest -->
+      <group name="sumTest">
+        <method signature="SumOperationTest.testSumBasic(double, double, double)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest@64c64813]" name="testSumBasic" class="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest"/>
+        <method signature="SumOperationTest.testSumLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest@64c64813]" name="testSumLong" class="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest"/>
+      </group> <!-- sumTest -->
+      <group name="multTest">
+        <method signature="MultOperationTest.testMultBasic(double, double, double)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest@721e0f4f]" name="testMultBasic" class="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest"/>
+        <method signature="MultOperationTest.testMultLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest@721e0f4f]" name="testMultLong" class="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest"/>
+      </group> <!-- multTest -->
     </groups>
-    <test name="TotalCost1" duration-ms="46" started-at="2015-12-06T12:57:37Z" finished-at="2015-12-06T12:57:37Z">
-      <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest">
-        <test-method status="PASS" signature="testOveralTaxiParkCost1()[pri:0, instance:by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest@2f333739]" name="testOveralTaxiParkCost1" duration-ms="17" started-at="2015-12-06T15:57:37Z" finished-at="2015-12-06T15:57:37Z">
+    <test name="Sub" duration-ms="112" started-at="2015-12-07T09:14:54Z" finished-at="2015-12-07T09:14:54Z">
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest@6fffcba5]" name="setUp" is-config="true" duration-ms="26" started-at="2015-12-07T12:14:54Z" finished-at="2015-12-07T12:14:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOveralTaxiParkCost1 -->
-        <test-method status="PASS" signature="testOveralTaxiParkCost2()[pri:0, instance:by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest@2f333739]" name="testOveralTaxiParkCost2" duration-ms="1" started-at="2015-12-06T15:57:37Z" depends-on-methods="by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest.testOveralTaxiParkCost1" finished-at="2015-12-06T15:57:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testOveralTaxiParkCost2 -->
-        <test-method status="PASS" signature="testWithAddedCar1()[pri:0, instance:by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest@2f333739]" name="testWithAddedCar1" duration-ms="0" started-at="2015-12-06T15:57:37Z" depends-on-methods="by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest.testOveralTaxiParkCost2" finished-at="2015-12-06T15:57:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWithAddedCar1 -->
-        <test-method status="PASS" signature="testWithAddedCar2()[pri:0, instance:by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest@2f333739]" name="testWithAddedCar2" duration-ms="1" started-at="2015-12-06T15:57:37Z" depends-on-methods="by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest.testWithAddedCar1" finished-at="2015-12-06T15:57:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWithAddedCar2 -->
-      </class> <!-- by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest -->
-    </test> <!-- TotalCost1 -->
-    <test name="TotalCost2" duration-ms="3" started-at="2015-12-06T12:57:37Z" finished-at="2015-12-06T12:57:37Z">
-      <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostParametersTest">
-        <test-method status="PASS" signature="testParametr1(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostParametersTest@7a46a697]" name="testParametr1" duration-ms="0" started-at="2015-12-06T15:57:37Z" finished-at="2015-12-06T15:57:37Z">
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testSubBasic(double, double, double)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest@6fffcba5]" name="testSubBasic" duration-ms="16" started-at="2015-12-07T12:14:54Z" finished-at="2015-12-07T12:14:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[TestBrand]]>
+                <![CDATA[5.1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.6]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid sub1! expected [3.6] but found [3.5999999999999996]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid sub1! expected [3.6] but found [3.5999999999999996]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest.testSubBasic(SubOperationTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubBasic -->
+        <test-method status="PASS" signature="testSubLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest@6fffcba5]" name="testSubLong" duration-ms="1" started-at="2015-12-07T12:14:54Z" data-provider="subProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubLong -->
+        <test-method status="FAIL" signature="testSubLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest@6fffcba5]" name="testSubLong" duration-ms="1" started-at="2015-12-07T12:14:54Z" data-provider="subProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[90000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9999999]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[81111111]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid sub2! expected [81111111] but found [80000001]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid sub2! expected [81111111] but found [80000001]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:267)
+	at by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest.testSubLong(SubOperationTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubLong -->
+        <test-method status="PASS" signature="testSubLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest@6fffcba5]" name="testSubLong" duration-ms="34" started-at="2015-12-07T12:14:54Z" data-provider="subProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubLong -->
+        <test-method status="PASS" signature="testSubLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest@6fffcba5]" name="testSubLong" duration-ms="0" started-at="2015-12-07T12:14:54Z" data-provider="subProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-100]]>
               </value>
             </param>
             <param index="1">
@@ -41,38 +192,212 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Passenger]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[200]]>
+                <![CDATA[-200]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testParametr1 -->
-      </class> <!-- by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostParametersTest -->
-    </test> <!-- TotalCost2 -->
-    <test name="ViewCar" duration-ms="9" started-at="2015-12-06T12:57:37Z" finished-at="2015-12-06T12:57:37Z">
-      <class name="by.epam.tat.cherevach.module4.task1.unit_testing.SelectACarTest">
-        <test-method status="PASS" signature="testSelectACar(java.lang.String)[pri:0, instance:by.epam.tat.cherevach.module4.task1.unit_testing.SelectACarTest@532760d8]" name="testSelectACar" duration-ms="0" started-at="2015-12-06T15:57:37Z" description="This is a test for car entry selection" finished-at="2015-12-06T15:57:37Z">
+        </test-method> <!-- testSubLong -->
+        <test-method status="PASS" signature="testSubLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest@6fffcba5]" name="testSubLong" duration-ms="1" started-at="2015-12-07T12:14:54Z" data-provider="subProvider" finished-at="2015-12-07T12:14:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Test]]>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
               </value>
             </param>
           </params>
-          <exception class="by.epam.tat.cherevach.module3.lecture3.task1.exceptions.CarNotFoundExc">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubLong -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest@6fffcba5]" name="afterClass" is-config="true" duration-ms="1" started-at="2015-12-07T12:14:54Z" finished-at="2015-12-07T12:14:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest -->
+    </test> <!-- Sub -->
+    <test name="Sum" duration-ms="103" started-at="2015-12-07T09:14:54Z" finished-at="2015-12-07T09:14:54Z">
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest@64c64813]" name="setUp" is-config="true" duration-ms="30" started-at="2015-12-07T12:14:54Z" finished-at="2015-12-07T12:14:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSumBasic(double, double, double)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest@64c64813]" name="testSumBasic" duration-ms="14" started-at="2015-12-07T12:14:54Z" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5.1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[6.6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumBasic -->
+        <test-method status="PASS" signature="testSumLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest@64c64813]" name="testSumLong" duration-ms="14" started-at="2015-12-07T12:14:54Z" data-provider="sumProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[22]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumLong -->
+        <test-method status="PASS" signature="testSumLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest@64c64813]" name="testSumLong" duration-ms="1" started-at="2015-12-07T12:14:54Z" data-provider="sumProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[90000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9999999]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[99999999]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumLong -->
+        <test-method status="PASS" signature="testSumLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest@64c64813]" name="testSumLong" duration-ms="2" started-at="2015-12-07T12:14:54Z" data-provider="sumProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumLong -->
+        <test-method status="PASS" signature="testSumLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest@64c64813]" name="testSumLong" duration-ms="1" started-at="2015-12-07T12:14:54Z" data-provider="sumProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumLong -->
+        <test-method status="PASS" signature="testSumLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest@64c64813]" name="testSumLong" duration-ms="1" started-at="2015-12-07T12:14:54Z" data-provider="sumProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumLong -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest@64c64813]" name="afterClass" is-config="true" duration-ms="1" started-at="2015-12-07T12:14:54Z" finished-at="2015-12-07T12:14:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest -->
+    </test> <!-- Sum -->
+    <test name="Mult" duration-ms="25" started-at="2015-12-07T09:14:54Z" finished-at="2015-12-07T09:14:54Z">
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest@721e0f4f]" name="setUp" is-config="true" duration-ms="0" started-at="2015-12-07T12:14:54Z" finished-at="2015-12-07T12:14:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testMultBasic(double, double, double)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest@721e0f4f]" name="testMultBasic" duration-ms="3" started-at="2015-12-07T12:14:54Z" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.3]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[No results found for the entered car brand.]]>
+              <![CDATA[Invalid mult1! expected [3.3] but found [3.0]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[by.epam.tat.cherevach.module3.lecture3.task1.exceptions.CarNotFoundExc: No results found for the entered car brand.
-	at by.epam.tat.cherevach.module3.lecture2.task1.taxipark.CustomerOperations.selectParticularCar(CustomerOperations.java:59)
-	at by.epam.tat.cherevach.module4.task1.unit_testing.SelectACarTest.testSelectACar(SelectACarTest.java:22)
+              <![CDATA[java.lang.AssertionError: Invalid mult1! expected [3.3] but found [3.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest.testMultBasic(MultOperationTest.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -86,37 +411,166 @@
 	at org.testng.TestRunner.privateRun(TestRunner.java:782)
 	at org.testng.TestRunner.run(TestRunner.java:632)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1246)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1171)
-	at org.testng.TestNG.run(TestNG.java:1066)
-	at by.epam.tat.cherevach.module4.task1.unit_testing.UnitTestRunner.main(UnitTestRunner.java:17)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- by.epam.tat.cherevach.module3.lecture3.task1.exceptions.CarNotFoundExc -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSelectACar -->
-        <test-method status="PASS" signature="testSelectACar2(java.lang.String)[pri:0, instance:by.epam.tat.cherevach.module4.task1.unit_testing.SelectACarTest@532760d8]" name="testSelectACar2" duration-ms="0" started-at="2015-12-06T15:57:37Z" description="This one should fail" finished-at="2015-12-06T15:57:37Z">
+        </test-method> <!-- testMultBasic -->
+        <test-method status="PASS" signature="testMultLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest@721e0f4f]" name="testMultLong" duration-ms="5" started-at="2015-12-07T12:14:54Z" data-provider="multProvider" finished-at="2015-12-07T12:14:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[UnknownCar]]>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[121]]>
               </value>
             </param>
           </params>
-          <exception class="by.epam.tat.cherevach.module3.lecture3.task1.exceptions.CarNotFoundExc">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultLong -->
+        <test-method status="PASS" signature="testMultLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest@721e0f4f]" name="testMultLong" duration-ms="0" started-at="2015-12-07T12:14:54Z" data-provider="multProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[90]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[99]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8910]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultLong -->
+        <test-method status="PASS" signature="testMultLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest@721e0f4f]" name="testMultLong" duration-ms="1" started-at="2015-12-07T12:14:54Z" data-provider="multProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultLong -->
+        <test-method status="PASS" signature="testMultLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest@721e0f4f]" name="testMultLong" duration-ms="6" started-at="2015-12-07T12:14:54Z" data-provider="multProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultLong -->
+        <test-method status="PASS" signature="testMultLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest@721e0f4f]" name="testMultLong" duration-ms="1" started-at="2015-12-07T12:14:54Z" data-provider="multProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-10000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultLong -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest@721e0f4f]" name="afterClass" is-config="true" duration-ms="1" started-at="2015-12-07T12:14:54Z" finished-at="2015-12-07T12:14:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="testMultLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest@721e0f4f]" name="testMultLong" duration-ms="0" started-at="2015-12-07T12:14:54Z" data-provider="multProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultLong -->
+      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest -->
+    </test> <!-- Mult -->
+    <test name="Div" duration-ms="39" started-at="2015-12-07T09:14:54Z" finished-at="2015-12-07T09:14:54Z">
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest@649d209a]" name="setUp" is-config="true" duration-ms="0" started-at="2015-12-07T12:14:54Z" finished-at="2015-12-07T12:14:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="divByZero()[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest@649d209a]" name="divByZero" duration-ms="18" started-at="2015-12-07T12:14:54Z" finished-at="2015-12-07T12:14:54Z">
+          <exception class="java.lang.NumberFormatException">
             <message>
-              <![CDATA[No results found for the entered car brand.]]>
+              <![CDATA[Attempt to divide by zero]]>
             </message>
             <full-stacktrace>
-              <![CDATA[by.epam.tat.cherevach.module3.lecture3.task1.exceptions.CarNotFoundExc: No results found for the entered car brand.
-	at by.epam.tat.cherevach.module3.lecture2.task1.taxipark.CustomerOperations.selectParticularCar(CustomerOperations.java:59)
-	at by.epam.tat.cherevach.module4.task1.unit_testing.SelectACarTest.testSelectACar2(SelectACarTest.java:32)
+              <![CDATA[java.lang.NumberFormatException: Attempt to divide by zero
+	at com.epam.tat.module4.Calculator.div(Calculator.java:34)
+	at by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest.divByZero(DivOperationTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -130,22 +584,179 @@
 	at org.testng.TestRunner.privateRun(TestRunner.java:782)
 	at org.testng.TestRunner.run(TestRunner.java:632)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1246)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1171)
-	at org.testng.TestNG.run(TestNG.java:1066)
-	at by.epam.tat.cherevach.module4.task1.unit_testing.UnitTestRunner.main(UnitTestRunner.java:17)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- by.epam.tat.cherevach.module3.lecture3.task1.exceptions.CarNotFoundExc -->
+          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSelectACar2 -->
-      </class> <!-- by.epam.tat.cherevach.module4.task1.unit_testing.SelectACarTest -->
-    </test> <!-- ViewCar -->
-  </suite> <!-- Yuri's Test Suite -->
+        </test-method> <!-- divByZero -->
+        <test-method status="PASS" signature="testDivBasic(double, double, double)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest@649d209a]" name="testDivBasic" duration-ms="5" started-at="2015-12-07T12:14:54Z" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivBasic -->
+        <test-method status="PASS" signature="testDivLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest@649d209a]" name="testDivLong" duration-ms="2" started-at="2015-12-07T12:14:54Z" data-provider="divProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivLong -->
+        <test-method status="PASS" signature="testDivLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest@649d209a]" name="testDivLong" duration-ms="0" started-at="2015-12-07T12:14:54Z" data-provider="divProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[90]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivLong -->
+        <test-method status="FAIL" signature="testDivLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest@649d209a]" name="testDivLong" duration-ms="0" started-at="2015-12-07T12:14:54Z" data-provider="divProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-2.5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[argument type mismatch]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivLong -->
+        <test-method status="PASS" signature="testDivLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest@649d209a]" name="testDivLong" duration-ms="0" started-at="2015-12-07T12:14:54Z" data-provider="divProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivLong -->
+        <test-method status="PASS" signature="testDivLong(long, long, long)[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest@649d209a]" name="testDivLong" duration-ms="0" started-at="2015-12-07T12:14:54Z" data-provider="divProvider" finished-at="2015-12-07T12:14:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivLong -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest@649d209a]" name="afterClass" is-config="true" duration-ms="1" started-at="2015-12-07T12:14:54Z" finished-at="2015-12-07T12:14:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest -->
+    </test> <!-- Div -->
+  </suite> <!-- Calculator_tests -->
 </testng-results>

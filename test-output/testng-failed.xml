@@ -1,30 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Yuri&#039;s Test Suite]">
-  <parameter name="testCarBrand" value="Test"/>
-  <parameter name="testCarPetrolConsumption" value="200"/>
-  <parameter name="testCarBrand2" value="UnknownCar"/>
-  <parameter name="testCarType" value="Passenger"/>
-  <parameter name="testCarPrice" value="100"/>
-  <test name="TotalCost1">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Calculator_tests]" parallel="tests">
+  <parameter name="subResult" value="3.6"/>
+  <parameter name="sub2" value="1.5"/>
+  <parameter name="mult2" value="2.2"/>
+  <parameter name="addend1" value="5.1"/>
+  <parameter name="divResult" value="2"/>
+  <parameter name="sub1" value="5.1"/>
+  <parameter name="mult1" value="1.5"/>
+  <parameter name="addend2" value="1.5"/>
+  <parameter name="sum" value="6.6"/>
+  <parameter name="multResult" value="3.3"/>
+  <parameter name="div2" value="1.1"/>
+  <parameter name="div1" value="2.2"/>
+  <test name="Sum">
+    <parameter name="addend1" value="5.1"/>
+    <parameter name="addend2" value="1.5"/>
+    <parameter name="sum" value="6.6"/>
     <classes>
-      <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest"/>
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest"/>
     </classes>
-  </test> <!-- TotalCost1 -->
-  <test name="TotalCost2">
-    <parameter name="testCarBrand" value="TestBrand"/>
-    <parameter name="testCarPetrolConsumption" value="200"/>
-    <parameter name="testCarType" value="Passenger"/>
-    <parameter name="testCarPrice" value="100"/>
+  </test> <!-- Sum -->
+  <test name="Sub">
+    <parameter name="subResult" value="3.6"/>
+    <parameter name="sub2" value="1.5"/>
+    <parameter name="sub1" value="5.1"/>
     <classes>
-      <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostParametersTest"/>
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest"/>
     </classes>
-  </test> <!-- TotalCost2 -->
-  <test name="ViewCar">
-    <parameter name="testCarBrand" value="Test"/>
-    <parameter name="testCarBrand2" value="UnknownCar"/>
+  </test> <!-- Sub -->
+  <test name="Mult">
+    <parameter name="mult2" value="2.2"/>
+    <parameter name="mult1" value="1.5"/>
+    <parameter name="multResult" value="3.3"/>
     <classes>
-      <class name="by.epam.tat.cherevach.module4.task1.unit_testing.SelectACarTest"/>
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest"/>
     </classes>
-  </test> <!-- ViewCar -->
-</suite> <!-- Failed suite [Yuri's Test Suite] -->
+  </test> <!-- Mult -->
+  <test name="Div">
+    <parameter name="divResult" value="2"/>
+    <parameter name="div2" value="1.1"/>
+    <parameter name="div1" value="2.2"/>
+    <classes>
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest"/>
+    </classes>
+  </test> <!-- Div -->
+  <test name="Sub(failed)" parallel="tests">
+    <parameter name="subResult" value="3.6"/>
+    <parameter name="sub2" value="1.5"/>
+    <parameter name="sub1" value="5.1"/>
+    <classes>
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest">
+        <methods>
+          <include name="testSubBasic" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="testSubLong" invocation-numbers="1"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest -->
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest -->
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest -->
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest -->
+    </classes>
+  </test> <!-- Sub(failed) -->
+  <test name="Mult(failed)" parallel="tests">
+    <parameter name="mult2" value="2.2"/>
+    <parameter name="mult1" value="1.5"/>
+    <parameter name="multResult" value="3.3"/>
+    <classes>
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest -->
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest">
+        <methods>
+          <include name="testMultBasic" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest -->
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest -->
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest -->
+    </classes>
+  </test> <!-- Mult(failed) -->
+  <test name="Div(failed)" parallel="tests">
+    <parameter name="divResult" value="2"/>
+    <parameter name="div2" value="1.1"/>
+    <parameter name="div1" value="2.2"/>
+    <classes>
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest -->
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="testDivLong" invocation-numbers="2"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest -->
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest -->
+      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest -->
+    </classes>
+  </test> <!-- Div(failed) -->
+</suite> <!-- Failed suite [Calculator_tests] -->
