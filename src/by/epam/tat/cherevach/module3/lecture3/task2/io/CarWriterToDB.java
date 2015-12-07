@@ -15,18 +15,10 @@ public class CarWriterToDB implements CarWriterInterface {
 			Statement stmt = dbConnection.createStatement();
 
 			stmt.execute("CREATE TABLE IF NOT EXISTS CARS (brand varchar(120), price integer, type varchar(120), petrol integer)");
-			//stmt.execute("SHUTDOWN");
 			for (Car car : cars) {
-				//stmt.executeUpdate("INSERT INTO CARS(BRAND,PRICE,TYPE,PETROL) VALUES('"
-						//+ car.getCarBrand() + "',"
-						//+ car.getCarPrice() + "',"
-						//+ car.getCarType() + "',"
-						//+ car.getPetrolConsumption() + ")");
 				stmt.executeUpdate("INSERT INTO CARS(BRAND,PRICE) VALUES('"
 						+ car.getCarBrand() + "',"
-						+ car.getCarPrice() + ")");
-						//+ car.getCarType() + ")");
-						//+ car.getPetrolConsumption() + ")");		
+						+ car.getCarPrice() + ")");		
 			}
 			stmt.close();
 			System.out.println("Writing to DB status: COMPLETED");

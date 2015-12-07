@@ -134,7 +134,7 @@ public class TaxiParkRunner {
     				//break;
     			}
     		} 
-    		catch (CarNotFoundExc e) {
+    		catch (CarNotFoundException e) {
     			//user exception 1
     			System.err.println(exceptionOper + e.getMessage());
     		}
@@ -146,7 +146,7 @@ public class TaxiParkRunner {
     			//system exception
     			System.err.println(exceptionOper + e.getMessage());
     		}
-    		catch (PriceIsNullExc e) {
+    		catch (PriceIsNullException e) {
     			//user exception 3
     			System.err.println(exceptionOper + e.getMessage());
     		}

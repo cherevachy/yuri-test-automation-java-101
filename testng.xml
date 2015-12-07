@@ -2,7 +2,7 @@
 <suite name="Yuri's Test Suite">
     <test name="TotalCost1">
         <classes>
-            <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TestTaxiParkTotalCost"/>
+            <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest"/>
         </classes>
      </test> 
     
@@ -13,16 +13,16 @@
     <parameter name="testCarType" value= "Passenger"/>  
     <parameter name="testCarPetrolConsumption" value= "200"/>          
         <classes>
-            <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TestTaxiParkTotalCostParameters"/>
+            <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostParametersTest"/>
         </classes>
     </test>
     
     
     <test name="ViewCar">   
     <parameter name="testCarBrand" value= "Test"/>     
-    <parameter name="testCarBrand2" value= "UnknownCar"/>     
+    <parameter name="testCarNotInList" value= "UnknownCar"/>     
         <classes>
-            <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TestSelectACar"/>
+            <class name="by.epam.tat.cherevach.module4.task1.unit_testing.SelectACarTest"/>
         </classes>
     </test>
     

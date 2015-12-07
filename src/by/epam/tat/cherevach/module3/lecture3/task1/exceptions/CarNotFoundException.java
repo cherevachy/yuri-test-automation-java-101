@@ -1,10 +1,10 @@
 package by.epam.tat.cherevach.module3.lecture3.task1.exceptions;
 
-public class CarNotFoundExc extends RuntimeException {
+public class CarNotFoundException extends RuntimeException {
     
 	private String excMessage;
 	
-	public CarNotFoundExc (String excMessage) {
+	public CarNotFoundException (String excMessage) {
     	super(excMessage);
     	this.excMessage = excMessage;
 	}

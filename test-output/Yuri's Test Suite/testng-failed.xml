@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Yuri&#039;s Test Suite]">
-  <parameter name="testCarBrand" value="BMW"/>
+  <parameter name="testCarBrand" value="Test"/>
   <parameter name="testCarPetrolConsumption" value="200"/>
+  <parameter name="testCarBrand2" value="UnknownCar"/>
   <parameter name="testCarType" value="Passenger"/>
   <parameter name="testCarPrice" value="100"/>
   <test name="TotalCost1">
     <classes>
-      <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TestTaxiParkTotalCost"/>
+      <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostTest"/>
     </classes>
   </test> <!-- TotalCost1 -->
   <test name="TotalCost2">
@@ -16,23 +17,14 @@
     <parameter name="testCarType" value="Passenger"/>
     <parameter name="testCarPrice" value="100"/>
     <classes>
-      <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TestTaxiParkTotalCostParameters"/>
+      <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TaxiParkTotalCostParametersTest"/>
     </classes>
   </test> <!-- TotalCost2 -->
   <test name="ViewCar">
-    <parameter name="testCarBrand" value="BMW"/>
+    <parameter name="testCarBrand" value="Test"/>
+    <parameter name="testCarBrand2" value="UnknownCar"/>
     <classes>
-      <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TestSelectACar"/>
+      <class name="by.epam.tat.cherevach.module4.task1.unit_testing.SelectACarTest"/>
     </classes>
   </test> <!-- ViewCar -->
-  <test name="ViewCar(failed)">
-    <parameter name="testCarBrand" value="BMW"/>
-    <classes>
-      <class name="by.epam.tat.cherevach.module4.task1.unit_testing.TestSelectACar">
-        <methods>
-          <include name="SelectACar" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- by.epam.tat.cherevach.module4.task1.unit_testing.TestSelectACar -->
-    </classes>
-  </test> <!-- ViewCar(failed) -->
 </suite> <!-- Failed suite [Yuri's Test Suite] -->

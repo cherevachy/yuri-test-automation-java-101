@@ -2,8 +2,8 @@ package by.epam.tat.cherevach.module3.lecture2.task1.taxipark;
 
 import java.util.*;
 
-import by.epam.tat.cherevach.module3.lecture3.task1.exceptions.CarNotFoundExc;
-import by.epam.tat.cherevach.module3.lecture3.task1.exceptions.PriceIsNullExc;
+import by.epam.tat.cherevach.module3.lecture3.task1.exceptions.CarNotFoundException;
+import by.epam.tat.cherevach.module3.lecture3.task1.exceptions.PriceIsNullException;
 
 public class CustomerOperations implements CustomerInterface{
 
@@ -56,7 +56,7 @@ public class CustomerOperations implements CustomerInterface{
 	
     if(count == 0) {             
        // try {
-			throw new CarNotFoundExc("No results found for the entered car brand.");
+			throw new CarNotFoundException("No results found for the entered car brand.");
 			
 		//} catch (CarNotFoundExc e) {
 			// TODO Auto-generated catch block
