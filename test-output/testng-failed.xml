@@ -1,145 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Calculator_tests]" parallel="tests">
-  <parameter name="subResult" value="3.6"/>
-  <parameter name="sub2" value="1.5"/>
-  <parameter name="mult2" value="2.2"/>
-  <parameter name="addend1" value="5.1"/>
-  <parameter name="divResult" value="2"/>
-  <parameter name="sub1" value="5.1"/>
-  <parameter name="mult1" value="1.5"/>
-  <parameter name="addend2" value="1.5"/>
-  <parameter name="sum" value="6.6"/>
-  <parameter name="multResult" value="3.3"/>
-  <parameter name="div2" value="1.1"/>
-  <parameter name="div1" value="2.2"/>
-  <test name="Sum">
-    <parameter name="addend1" value="5.1"/>
-    <parameter name="addend2" value="1.5"/>
-    <parameter name="sum" value="6.6"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Yuri&#039;s Test Suite]">
+  <test name="GMail tests">
     <classes>
-      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest"/>
+      <class name="by.epam.tat.cherevach.module5.webdriver.GMailOperations"/>
     </classes>
-  </test> <!-- Sum -->
-  <test name="Sub">
-    <parameter name="subResult" value="3.6"/>
-    <parameter name="sub2" value="1.5"/>
-    <parameter name="sub1" value="5.1"/>
+  </test> <!-- GMail tests -->
+  <test name="GMail tests(failed)">
     <classes>
-      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest"/>
+      <class name="by.epam.tat.cherevach.module5.webdriver.GMailOperations">
+        <methods>
+          <include name="logInPass"/>
+          <include name="sendEmail"/>
+          <include name="logInGeneral"/>
+          <include name="emailReceived"/>
+        </methods>
+      </class> <!-- by.epam.tat.cherevach.module5.webdriver.GMailOperations -->
     </classes>
-  </test> <!-- Sub -->
-  <test name="Mult">
-    <parameter name="mult2" value="2.2"/>
-    <parameter name="mult1" value="1.5"/>
-    <parameter name="multResult" value="3.3"/>
-    <classes>
-      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest"/>
-    </classes>
-  </test> <!-- Mult -->
-  <test name="Div">
-    <parameter name="divResult" value="2"/>
-    <parameter name="div2" value="1.1"/>
-    <parameter name="div1" value="2.2"/>
-    <classes>
-      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest"/>
-    </classes>
-  </test> <!-- Div -->
-  <test name="Sub(failed)" parallel="tests">
-    <parameter name="subResult" value="3.6"/>
-    <parameter name="sub2" value="1.5"/>
-    <parameter name="sub1" value="5.1"/>
-    <classes>
-      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest">
-        <methods>
-          <include name="testSubBasic" invocation-numbers="0"/>
-          <include name="setUp"/>
-          <include name="testSubLong" invocation-numbers="1"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest -->
-      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest">
-        <methods>
-          <include name="afterClass"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest -->
-      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest -->
-      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest -->
-    </classes>
-  </test> <!-- Sub(failed) -->
-  <test name="Mult(failed)" parallel="tests">
-    <parameter name="mult2" value="2.2"/>
-    <parameter name="mult1" value="1.5"/>
-    <parameter name="multResult" value="3.3"/>
-    <classes>
-      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest -->
-      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest">
-        <methods>
-          <include name="testMultBasic" invocation-numbers="0"/>
-          <include name="setUp"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest -->
-      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest">
-        <methods>
-          <include name="afterClass"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest -->
-      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest -->
-    </classes>
-  </test> <!-- Mult(failed) -->
-  <test name="Div(failed)" parallel="tests">
-    <parameter name="divResult" value="2"/>
-    <parameter name="div2" value="1.1"/>
-    <parameter name="div1" value="2.2"/>
-    <classes>
-      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.SubOperationTest -->
-      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest">
-        <methods>
-          <include name="afterClass"/>
-          <include name="testDivLong" invocation-numbers="2"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.DivOperationTest -->
-      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.MultOperationTest -->
-      <class name="by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- by.epam.tat.cherevach.module4.task2.calculator_testing.SumOperationTest -->
-    </classes>
-  </test> <!-- Div(failed) -->
-</suite> <!-- Failed suite [Calculator_tests] -->
+  </test> <!-- GMail tests(failed) -->
+</suite> <!-- Failed suite [Yuri's Test Suite] -->
